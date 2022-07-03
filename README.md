@@ -7,11 +7,11 @@ Dataset Images are look like below image:
 
 
 For the Hough Transform algorithm, it is crucial to perform edge detection first to produce an edge image which will then be used as input into the algorithm; so first of all, I applied edge detection to the images to find edges and better view of circles in the images; so to do that, followed the below steps : 
-*	  gaussian blur
-*	  Sobel filter
-*	  non_max suppression
-*   threshold
-*	  hysteresis
+*  gaussian blur
+*  Sobel filter
+*  non_max suppression
+*  threshold
+*  hysteresis
 
 Before edge detection :
 
@@ -27,10 +27,10 @@ After applying edge_detection, I implemented my custom hough transform algorithm
 The transform effectively searches for objects with a high degree of radial symmetry, with each degree of balance receiving one “vote” in the search space. By exploring a 3D Hough search space, the transform can measure the centroid and radius of each circular object in an image.
 
 Some points in this implementation helped to have better speed and fewer computations, for example : 
-*	Numpy broadcasting and vectorizing
-*	Do some computations out of the loop
-*	R and (a,b) range
-*	Compute just for edges
+*  Numpy broadcasting and vectorizing
+*  Do some computations out of the loop
+*  R and (a,b) range
+*  Compute just for edges
 
 ![image](https://user-images.githubusercontent.com/47561760/177048003-8c867dbd-140a-4573-8bfe-e0346a78cd4f.png)
 
