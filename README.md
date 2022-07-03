@@ -7,11 +7,11 @@ Dataset Images are look like below image:
 
 
 For the Hough Transform algorithm, it is crucial to perform edge detection first to produce an edge image which will then be used as input into the algorithm; so first of all, I applied edge detection to the images to find edges and better view of circles in the images; so to do that, followed the below steps : 
-*  gaussian blur
-*  Sobel filter
-*  non_max suppression
-*  threshold
-*  hysteresis
+1.gaussian blur
+2.Sobel filter
+3.non_max suppression
+4.threshold
+5.hysteresis
 
 Before edge detection :
 
@@ -31,9 +31,6 @@ Some points in this implementation helped to have better speed and fewer computa
 *  Do some computations out of the loop
 *  R and (a,b) range
 *  Compute just for edges
-
-![image](https://user-images.githubusercontent.com/47561760/177048003-8c867dbd-140a-4573-8bfe-e0346a78cd4f.png)
-
 
 ## Normalization ## 
 The homogeneous rubber sheet model, described by Daugman , assigns to each point on the iris, regardless of its size and pupillary dilation, a pair of real coordinates (r, θ), where radial variable r is in range [0, 1], and angle θ is in range [0, 2π]. The normalization process generates iris regions of the same constant dimensions, so that two images of the same iris captured under different conditions have the characteristic features at the same spatial locations. 
