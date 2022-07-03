@@ -7,11 +7,12 @@ Dataset Images are look like below image:
 
 
 For the Hough Transform algorithm, it is crucial to perform edge detection first to produce an edge image which will then be used as input into the algorithm; so first of all, I applied edge detection to the images to find edges and better view of circles in the images; so to do that, followed the below steps : 
-1.gaussian blur
-2.Sobel filter
-3.non_max suppression
-4.threshold
-5.hysteresis
+
+1.  gaussian blur
+2.  Sobel filter
+3.  non_max suppression
+4.  threshold
+5.  hysteresis
 
 Before edge detection :
 
