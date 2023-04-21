@@ -42,6 +42,16 @@ I use Daugman normalization to transform the iris image into a polar representat
 
 We implement a Siamese network for identification, which takes in two iris images and outputs a similarity score. We use contrastive loss to train the network, which helps to optimize the similarity scores.
 
+## 🚀 Future works and get started
+
+Consider that I didn't train classifer on the learned representations by siamese you can use this repository to preprocess and learn representations of your dataset and by training a classifier get better results. 
+
+To get started with our iris dataset identification project, follow these steps:
+
+1. 🔗 Clone this repository: `https://github.com/sobhanshukueian/Iris-Identification.git`
+2. 🖼️ Run the preprocessing: `preprocess.ipynb`
+3. 🤖 Train the Siamese network: `Siamese Identification.ipynb`
+
 ## 📊 Visualization and Results (After 15 epochs training)
 
 We visualize the iris images before and after preprocessing, as well as examples of the Siamese network's similarity scores. 
@@ -77,14 +87,7 @@ We visualize the iris images before and after preprocessing, as well as examples
   <img width="800" height="300" src="https://user-images.githubusercontent.com/47561760/233616805-df2e263e-0f40-4720-aa3c-53cd385d88f1.png">
 </p>
 
-## 🚀 Getting Started
 
-To get started with our iris dataset identification project, follow these steps:
-
-1. 🔗 Clone this repository: `git clone https://github.com/your-username/iris-identification.git`
-2. 🛠️ Install the required dependencies: `pip install -r requirements.txt`
-3. 🖼️ Run the preprocessing script: `python preprocessing.py`
-4. 🤖 Train the Siamese network: `python train.py`
 
 # ⭐️ Please Star This Repo ⭐️
 
